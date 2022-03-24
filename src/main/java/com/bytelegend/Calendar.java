@@ -8,17 +8,14 @@ class Calendar {
     }
 
     public static void inputYearAndMonth() {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter full year :");
         int year = sc.nextInt();
         System.out.println("Enter month as number between 1 and 12 :");
         int month = sc.nextInt();
-
         printCalendar(year, month);
 
     }
-
     public static void printCalendar(int year, int month) {
         //一周七天，定义一个计数器，打印一天加1（包括空白）如果%7等于0的话就需要换行
         int count = 0;
